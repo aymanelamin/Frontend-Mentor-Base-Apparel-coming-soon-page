@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    background-image: url(images/bg-pattern-desktop.svg);
+    display: flex;
+    min-height: 100vh;
+    font-weight: 300;
+}
+
+#leftContainer {
+    padding: 5% 7% 5% 9%;
+    height: 100%;
+}
+
+#logo {
+    margin-bottom: 22%;
+}
+
+#mainImageMobile {
+    display: none;
+}
+
+#mainHeading {
+    margin-bottom: 3.5%;
+    font-size: 4vw;
+    padding-right: 10%;
+    letter-spacing: 1.5vw;
+    line-height: 5.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: hsl(0, 6%, 24%);
+}
+
+#myHeadingSpan {
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+
+#mainPara {
+    font-weight: 400;
+    margin-bottom: 8%;
+    margin-right: 12vw;
+    line-height: 2vw;
+    color: hsl(0, 36%, 70%);
+}
+
+#myContainer {
+    position: relative;
+}
+
+#emailContainer {
+    width: 75%;
+    padding: 3.5% 6%;
+    border-radius: 2vw;
+    border-style: solid;
+    border-width: .08vw;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    vertical-align: middle;
+    opacity: .6;
+    color: hsl(0, 6%, 24%);
+    font-weight: 700;
+    
+}
+
+::placeholder {
+    color: hsl(0, 36%, 70%);
+    font-weight: 400;
+    opacity: .6; 
+}
+
+#theButton {
+    background: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    width: 17%;
+    padding: 3.25% ;
+    border-radius: 2vw;
+    border: none;
+    position: absolute;
+    right: 20%;
+    vertical-align: middle;
+    display: inline; 
+}
+
+#theButton:hover {
+    cursor: pointer;
+    background: hsl(0, 62%, 90%);
+}
+
+#iconError {
+    display: inline;
+    position: relative;
+    left: -20%;
+    vertical-align: middle;
+    display: none;
+}
+
+#errorMassege {
+    margin: 4% 0 1% 6%;
+    color: hsl(0, 93%, 68%, .7);
+    font-weight: 400;
+    display: none;
+    position: relative;
+    top: 1vw;
+}
+
+#mainImage {
+    width: 42.36111vw;
+    height: 100%;
+}
+
+@media screen and (max-width : 700px) {
+
+    body {
+        padding-bottom: 10%;
+        display: block;
+        height: 800px;
+    }
+
+    #logo {
+        width: 32%;
+        margin: 7%
+    }
+    
+    #mainImageMobile {
+        display: block;
+        width: 100%;
+    }
+
+    #mainImage {
+        display: none;
+    }
+
+    #leftContainer {
+        padding: 0;
+    }
+
+
+    #mainHeading {
+        text-align: center;
+        margin: 18% auto 3% auto;
+        font-size: 13vw;
+        padding-right: 0;
+        letter-spacing: 1.5vw;
+        line-height: 13vw;
+    }
+    
+    
+    #mainPara {
+        text-align: center;
+        margin: 5% 5% 9% 5%;
+        line-height: 5vw;
+    }
+
+    #emailContainer {
+        margin: auto;
+        width: 88%;
+        padding: 3.5% 6%;
+        border-radius: 6vw;
+        border-width: .08vw;   
+    }
+
+    #theButton {
+        width: 17%;
+        padding: 2.7% ;
+        border-radius: 6vw;
+        border: none;
+        position: absolute;
+        right: 5.5%;
+    }
+
+    #myContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #iconError {
+        width: 6vw;
+        height: 6vw;
+        left: -30%;
+       
+    }
+    
+    #errorMassege {
+        margin: 4% 0 1% 10%;
+        top: 2vw;
+    }
+
+}
+
+
+  
